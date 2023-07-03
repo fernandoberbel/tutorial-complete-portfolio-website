@@ -61,5 +61,78 @@ function scrollTop() {
 window.addEventListener("scroll", scrollTop);
 
 /* MIXITUP FILTER PORTFOLIO */
+const mixer = mixitup(".portfolio-container", {
+  selectors: {
+    target: ".portfolio-content",
+  },
+  animation: {
+    duration: 400,
+  },
+});
 
 /* link active portfolio */
+const linkPortfolio = document.querySelectorAll(".portfolio-item");
+
+function activePortfolio() {
+  if (linkPortfolio) {
+    linkPortfolio.forEach((l) => l.classList.remove("active-portfolio"));
+    this.classList.add("active-portfolio");
+  }
+}
+linkPortfolio.forEach((l) => l.addEventListener("click", activePortfolio));
+
+/* SWIPER CAROUSEL */
+const swiper = new Swiper(".testimonial-container", {
+  spaceBetween: 16,
+  loop: true,
+  grabCursor: true,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
+
+/* GSAP ANIMATION */
+gsap.from(".home-img", { opacity: 0, duration: 2, delay: 0.5, x: 60 });
+gsap.from(".home-data", { opacity: 0, duration: 2, delay: 0.8, y: 25 });
+gsap.from(".home-greeting, .home-name, .home-profession,.home-button", {
+  opacity: 0,
+  duration: 2,
+  delay: 1,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".nav-logo, .nav-toggle", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.5,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".nav-item", {
+  opacity: 0,
+  duration: 2,
+  delay: 1.8,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});
+gsap.from(".home-social-icon", {
+  opacity: 0,
+  duration: 2,
+  delay: 2.3,
+  y: 25,
+  ease: "expo.out",
+  stagger: 0.2,
+});

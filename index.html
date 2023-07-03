@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SWIPER CSS -->
-    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
     <!-- BOX ICONS -->
     <link
@@ -63,7 +63,10 @@
             <span class="home-greeting">Hello, My name is</span>
             <h1 class="home-name">Clay Doe</h1>
             <span class="home-profession">Web Developer</span>
-            <a download="" href="assets/doc/cv.pdf" class="button button-light"
+            <a
+              download=""
+              href="assets/doc/cv.pdf"
+              class="button button-light home-button"
               >Download Cv</a
             >
           </div>
@@ -121,7 +124,7 @@
       </section>
 
       <!-- QUALIFICATION -->
-      <section class="qualification section bd-container" id="about">
+      <section class="qualification section bd-container">
         <span class="section-subtitle">Experience and education</span>
         <h2 class="section-title">Qualification</h2>
 
@@ -227,24 +230,330 @@
       </section>
 
       <!-- SERVICES -->
+      <section class="services section bd-container" id="services">
+        <span class="section-subtitle">What i offer</span>
+        <h2 class="section-title">Services</h2>
+
+        <div class="services-container bd-grid">
+          <div class="services-data">
+            <i class="bx bx-palette services-icon"></i>
+            <h3 class="services-title">Ui/Ux Design</h3>
+            <p class="services-description">
+              Service that i offer and work, with years of experience in the
+              work area.
+            </p>
+            <a href="#" class="button">Know More</a>
+          </div>
+
+          <div class="services-data">
+            <i class="bx bx-laptop services-icon"></i>
+            <h3 class="services-title">Web development</h3>
+            <p class="services-description">
+              Service that i offer and work, with years of experience in the
+              work area.
+            </p>
+            <a href="#" class="button">Know More</a>
+          </div>
+
+          <div class="services-data">
+            <i class="bx bx-pen services-icon"></i>
+            <h3 class="services-title">Graphic Design</h3>
+            <p class="services-description">
+              Service that i offer and work, with years of experience in the
+              work area.
+            </p>
+            <a href="#" class="button">Know More</a>
+          </div>
+        </div>
+      </section>
 
       <!-- PROJECT IN MIND -->
+      <section class="project section bd-container">
+        <div class="project-container bd-grid">
+          <div class="project-data">
+            <i class="bx bx-chat project-icon"></i>
+
+            <div>
+              <h2 class="project-title">Project in mind</h2>
+              <p class="project-description">
+                Hire me to carry out the following projects.
+              </p>
+            </div>
+
+            <div>
+              <a href="#" class="button button-white">Hire me</a>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- PORTFOLIO -->
+      <section class="portfolio section bd-container" id="portfolio">
+        <span class="section-subtitle">My recent works</span>
+        <h2 class="section-title">Portfolio</h2>
+
+        <div class="portfolio-nav">
+          <span class="portfolio-item active-portfolio" data-filter="all"
+            >All</span
+          >
+          <span class="portfolio-item" data-filter=".web">Web</span>
+          <span class="portfolio-item" data-filter=".ux">Ui/Ux</span>
+          <span class="portfolio-item" data-filter=".app">App</span>
+        </div>
+
+        <div class="portfolio-container bd-grid">
+          <div class="portfolio-content mix web">
+            <a href="#"
+              ><img src="assets/img/work1.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Web development</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-content mix web">
+            <a href="#"
+              ><img src="assets/img/work2.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Web development</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-content mix ux">
+            <a href="#"
+              ><img src="assets/img/work3.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Ux design</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-content mix ux">
+            <a href="#"
+              ><img src="assets/img/work4.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Ux design</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-content mix app">
+            <a href="#"
+              ><img src="assets/img/work5.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Mobile app</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+
+          <div class="portfolio-content mix app">
+            <a href="#"
+              ><img src="assets/img/work6.jpg" alt="" class="portfolio-img"
+            /></a>
+            <div class="portfolio-data">
+              <span class="portfolio-subtitle">Mobile app</span>
+              <a href="#"
+                ><h2 class="portfolio-title">
+                  New portfolio of work done for a client.
+                </h2></a
+              >
+              <a href="#" class="button button-link">View Details</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIAL -->
+      <section class="testimonial section bd-container">
+        <span class="section-subtitle">My client saying</span>
+        <h2 class="section-title">Testimonial</h2>
+
+        <div class="testimonial-container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial-content swiper-slide">
+              <img
+                src="assets/img/testimonial1.jpg"
+                alt=""
+                class="testimonial-img"
+              />
+              <h3 class="testimonial-title">Nik Holly</h3>
+              <span class="testimonial-client">Client</span>
+              <p class="testimonial-description">
+                This company does a very good service, offers the best deals and
+                does a good job, I recommend it.
+              </p>
+            </div>
+
+            <div class="testimonial-content swiper-slide">
+              <img
+                src="assets/img/testimonial2.jpg"
+                alt=""
+                class="testimonial-img"
+              />
+              <h3 class="testimonial-title">Sara Mill</h3>
+              <span class="testimonial-client">Client</span>
+              <p class="testimonial-description">
+                This company does a very good service, offers the best deals and
+                does a good job, I recommend it.
+              </p>
+            </div>
+
+            <div class="testimonial-content swiper-slide">
+              <img
+                src="assets/img/testimonial3.jpg"
+                alt=""
+                class="testimonial-img"
+              />
+              <h3 class="testimonial-title">Clay Mitchell</h3>
+              <span class="testimonial-client">Client</span>
+              <p class="testimonial-description">
+                This company does a very good service, offers the best deals and
+                does a good job, I recommend it.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- CONTACTME -->
+      <section class="contact section bd-container" id="contact">
+        <span class="section-subtitle">For projects</span>
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact-container bd-grid">
+          <div class="contact-content bd-grid">
+            <div class="contact-box">
+              <i class="bx bx-home contact-icon"></i>
+              <h3 class="contact-title">Location</h3>
+              <span class="contact-description">#123 Lima - Peru</span>
+            </div>
+
+            <div class="contact-box">
+              <i class="bx bx-phone contact-icon"></i>
+              <h3 class="contact-title">Phone</h3>
+              <span class="contact-description">999-888-777</span>
+            </div>
+
+            <div class="contact-box">
+              <i class="bx bx-envelope contact-icon"></i>
+              <h3 class="contact-title">Gmail</h3>
+              <span class="contact-description">clayuser@email.com</span>
+            </div>
+
+            <div class="contact-box">
+              <i class="bx bx-chat contact-icon"></i>
+              <h3 class="contact-title">Chat</h3>
+              <div>
+                <a href="#" class="contact-social"
+                  ><i class="bx bxl-whatsapp-square"></i
+                ></a>
+                <a href="#" class="contact-social"
+                  ><i class="bx bxl-telegram"></i
+                ></a>
+                <a href="#" class="contact-social"
+                  ><i class="bx bxl-messenger"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact-form">
+            <div class="contact-inputs">
+              <input type="text" placeholder="Name" class="contact-input" />
+              <input type="email" placeholder="Email" class="contact-input" />
+            </div>
+
+            <div class="contact-inputs">
+              <input type="text" placeholder="Project" class="contact-input" />
+              <input type="number" placeholder="Number" class="contact-input" />
+            </div>
+
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="7"
+              placeholder="Message"
+              class="contact-input"
+            ></textarea>
+
+            <input
+              type="submit"
+              value="Send Message"
+              class="button contact-button"
+            />
+          </form>
+        </div>
+      </section>
     </main>
 
     <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container bd-container">
+        <h1 class="footer-title">Clay Doe</h1>
+        <p class="footer-description">
+          I am Clay Doe and this is my personal website, consult me here.
+        </p>
+
+        <div class="footer-social">
+          <a href="#" class="footer-link">
+            <i class="bx bxl-linkedin"></i>
+          </a>
+          <a href="#" class="footer-link">
+            <i class="bx bxl-github"></i>
+          </a>
+          <a href="#" class="footer-link">
+            <i class="bx bxl-dribbble"></i>
+          </a>
+        </div>
+        <p class="footer-copy">&#169; 2020 Bedimcode. All right reserved</p>
+      </div>
+    </footer>
 
     <!-- MIXITUP FILTER -->
-    <script src=""></script>
+    <script src="assets/js/mixitup.min.js"></script>
 
     <!-- SWIPER JS -->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!-- GSAP -->
-    <script src=""></script>
+    <script src="assets/js/gsap.min.js"></script>
 
     <!-- MAIN JS -->
     <script src="script.js"></script>
   </body>
 </html>
+
+<!-- CREDITS BEDIMCODE YOUTUBE -->
